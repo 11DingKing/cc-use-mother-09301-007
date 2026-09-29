@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "product": "分类改革申诉复核",
+  "source_context": "http://edu.people.com.cn/n1/2026/0924/c1006-40804945.html",
+  "actors": [
+    "申诉院校",
+    "复核秘书",
+    "独立专家"
+  ],
+  "states": [
+    "提交",
+    "受理",
+    "补证",
+    "复核",
+    "决定"
+  ],
+  "invariants": [
+    "时限控制",
+    "利益回避",
+    "决定差异",
+    "幂等提交"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "09301-007-A",
+      "actor": "申诉院校",
+      "state": "提交"
+    },
+    {
+      "case_id": "09301-007-B",
+      "actor": "独立专家",
+      "state": "受理"
+    }
+  ],
+  "tags": [
+    "appeal-review",
+    "conflict-of-interest"
+  ]
+}
